@@ -17,7 +17,6 @@ namespace CMP1903M_Assessment_1_Base_Code
             //Create a 'Report' object
             var report = new Report();
             //Get either manually entered text, or text from a file
-            Console.WriteLine("HELLO TO THE FUCKING WORLD, FUCK YOU C#");
             Console.WriteLine("1. Do you want to enter the text via the keyboard? ");
             Console.WriteLine("2. Do you want to read in the text from a file? ");
             Console.WriteLine("Please enter 1 or 2:");
