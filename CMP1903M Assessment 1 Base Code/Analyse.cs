@@ -104,12 +104,14 @@ namespace CMP1903M_Assessment_1_Base_Code
         }
         public void analyseLongWords(string input)
         {
+            //removes all the punctuation
             List<string> words = new List<string>();
             input = input.Replace(".", "");
             input = input.Replace(",", "");
             input = input.Replace("?", "");
             input = input.Replace("!", "");
             string[] wordsList = input.Split(" ");
+            //checks which words are 'long words' (if they are longer than 7, they are long.)
             for (int i = 0; i < wordsList.Length; i++)
             {
                 if (wordsList[i].Length > 7)
