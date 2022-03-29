@@ -9,10 +9,9 @@ namespace CMP1903M_Assessment_1_Base_Code
     class Report
     {
         //Handles the reporting of the analysis
-        //Maybe have different methods for different formats of output?
-        //eg.   public void outputConsole(List<int>)
         public void reportAnalysis(List<int> input)
         {
+            //prints out the analysis of the input
             Console.WriteLine("The number of sentences: {0}", input[0]);
             Console.WriteLine("The number of vowels: {0}", input[1]);
             Console.WriteLine("The number of consonants: {0}", input[2]);
@@ -24,6 +23,7 @@ namespace CMP1903M_Assessment_1_Base_Code
         {
             foreach (var pair in dic)
             {
+                //prints the frequency of the letters
                 Console.WriteLine("There is {0} {1}'s", pair.Value, pair.Key);
             }
         }
